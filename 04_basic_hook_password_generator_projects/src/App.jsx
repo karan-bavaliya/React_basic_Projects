@@ -10,8 +10,8 @@ function App() {
   // const passwordgenerator=useCallback(fn,depecmc)
   // jayaree koi ek karata vadhare jagayayee call thase jethi function ma change thay chhee , tayare usecallback thase, what  is the dependencies ke jee varible ke etc jenathi function change ke effact thay chee tene dependencies kahevay, ex:number,chachter 
   const passwordgenerator=useCallback(()=>{
-   let pass=""
-     let str="ABCDEFGHIGKLMNOPQRSTVWXYZabcdefghijkimnopqrstvwxyz"
+  let pass=""
+  let str="ABCDEFGHIGKLMNOPQRSTVWXYZabcdefghijkimnopqrstvwxyz"
 
     if (numberAllowed)   str+="0123456789"
     if(chachterAllowed) str+="!@#$%^&*(){}"
@@ -21,7 +21,7 @@ function App() {
       pass += str.charAt(char)
 
       
-     
+    
       setpassword(pass)
   
     } 
@@ -53,7 +53,7 @@ useEffect(()=>{
               numberAllowed((prev)=>!prev);
             }}  />
             <label htmlFor="numberInput">Numbers</label>
-           
+          
           </div>
         </div>
       
@@ -62,7 +62,7 @@ useEffect(()=>{
               chachterAllowed((prev)=>!prev);
             }}  />
             <label htmlFor="numberInput">charchter</label>
-           
+          
           </div>
         </div>
       

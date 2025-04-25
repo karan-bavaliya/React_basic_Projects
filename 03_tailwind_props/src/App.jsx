@@ -6,7 +6,7 @@ function App() {
   let myobj={name:
     'karan'
   }
-  
+  let a =3
   return (
   <>
 
