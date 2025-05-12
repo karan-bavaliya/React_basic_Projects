@@ -37,7 +37,6 @@ export const todoslice = createSlice({
             // here state is always preserve  therefore directly push
             state.todos.push(todo)
         },
-
         removeTodo: (state, action) => {
             //here user pass remove id therefore use action for fetch user data
             state.todos = state.todos.filter((todo)=> todo.id !== action.payload)
